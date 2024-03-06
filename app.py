@@ -5,8 +5,9 @@ from dash import dcc, html
 from dash.dependencies import Input, Output
 
 # Verileri CSV dosyasından yükle
+url = 'https://covid.ourworldindata.org/data/owid-covid-data.csv'
+df = pd.read_csv(url)
 
-df = pd.read_csv("owid-covid-data.csv")
 
 # Ülkeler listesi
 countries = df['location'].unique()
