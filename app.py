@@ -13,7 +13,7 @@ countries = df['location'].unique()
 
 # Dash uygulamasını oluştur
 app = dash.Dash(__name__)
-
+server = app.server
 # Uygulama düzeni
 app.layout = html.Div([
     html.H1("Dünya Çapında COVID-19 Vakaları Haritası ve Ülke Verileri"),
